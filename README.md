@@ -1,6 +1,6 @@
 # これは何？
 
-コマンドラインツール作成支援のライブラリThor、JavaScriptAPIで動くヘッドレスWebKitのPhantomJSとそのテストユーティリティのCasperJSを使って、ターミナルで`$ git_pull origin-bento`と打つだけでオリジン弁当が注文できるシステムです。
+コマンドラインツール作成支援のライブラリThor、JavaScriptAPIで動くヘッドレスWebKitのPhantomJSとそのテストユーティリティのCasperJSを使った、オリジン弁当ののり弁当を34個も注文できるコマンドです。
 
 # 動作環境
 
