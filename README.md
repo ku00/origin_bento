@@ -1,7 +1,6 @@
 # これは何？
 
-コマンドラインツール作成支援のライブラリThor、JavaScriptAPIで動くヘッドレスWebKitのPhantomJSとそのユーティリティのCasperJSを使って、ターミナルで`$ git_pull origin-bento`と打つだけでオリジン弁当が注文できるシステムです。
-
+コマンドラインツール作成支援のライブラリThor、JavaScriptAPIで動くヘッドレスWebKitのPhantomJSとそのテストユーティリティのCasperJSを使って、ターミナルで`$ git_pull origin-bento`と打つだけでオリジン弁当が注文できるシステムです。
 
 # 動作環境
 
@@ -12,11 +11,16 @@
 * PhantomJS 1.9.7
 * CasperJS 1.1.0-beta3
 
+# 準備
+	$ chmod a+x cli.rb
+	$ sudo ln -s /絶対パス/cli.rb /usr/local/bin/git_pull
+	$ which git_pull
+
 # 使い方
 
 `order.js`内のコードにメールアドレスを入れて、ターミナルで
 
-    $ git_pull origin-bento
+    $ git_pull origin_bento
 
 と打つだけです。
 

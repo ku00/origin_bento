@@ -4,15 +4,18 @@ require 'thor'
 require 'open3'
  
 class Order < Thor
-    desc "git_pull origin-bento", "Order origin-bento by casperjs"
-    def git_pull(bento)
-        if bento == "origin-bento"
-            Open3.capture3("casperjs order.js")
-            puts "Completed the order!"
-        else
-            puts "sorry... Failed to order origin-bento. (´･_･`) "
-        end
-    end 
+	default_command :git_pull
+
+	desc "git_pull", ""
+	def git_pull
+		puts "sorry... Failed to order origin-bento. (´･_･`) "
+	end
+
+    desc "origin_bento", "Order origin_bento by casperjs"
+    def origin_bento
+        Open3.capture3("casperjs order.js")
+        puts "Completed the order!"
+    end
 end
  
 Order.start(ARGV)
