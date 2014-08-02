@@ -1,29 +1,41 @@
-# これは何？
+# origin_bento
 
-コマンドラインツール作成支援のライブラリThor、JavaScriptAPIで動くヘッドレスWebKitのPhantomJSとそのテストユーティリティのCasperJSを使った、オリジン弁当ののり弁当を34個も注文できるコマンドです。
+オリジン弁当ののり弁当をターミナルから注文できます。
 
-# 動作環境
-
-とりあえずCentOS 5.9での動作を確認しています。使うには以下のものが必要です。
+# Requirements
 
 * Ruby 2.0.0p353
-* Thor 0.19.1
+* Thor 0.19.1 (https://github.com/erikhuda/thor)
 * PhantomJS 1.9.7
 * CasperJS 1.1.0-beta3
 
-# 準備
-	$ chmod a+x cli.rb
-	$ sudo ln -s /絶対パス/cli.rb /usr/local/bin/git_pull
-	$ which git_pull
+# Setup
 
-# 使い方
+```bash
+git clone git@github.com:takuminnnn/origin_bento.git
+```
 
-`order.js`内のコードにメールアドレスを入れて、ターミナルで
+```bash
+$ gem install thor
+```
 
-    $ git_pull origin_bento
+コマンドを使うための準備として、
 
-と打つだけです。
+```bash
+$ chmod a+x cli.rb
+$ sudo ln -s /絶対パス/cli.rb /usr/local/bin/git_pull
+$ which git_pull
+```
 
-最後に追加したメールアドレスに仮注文メールが届くので、それに記載されたURLをクリックすれば注文完了です。
+# Usage
+
+`order.js`内のコードにメールアドレスを入れて、
+
+
+```bash
+$ git_pull origin_bento
+```
+
+追加したメールアドレスに仮注文メールが届くので、それに記載されたURLをクリックすれば注文完了です。
 
 ※配達先は`東京都大田区大田区蒲田一丁目4-1`、日時は注文日から`3日後09:00`になります。
