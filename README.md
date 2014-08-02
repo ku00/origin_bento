@@ -12,7 +12,7 @@
 # Setup
 
 ```bash
-git clone git@github.com:takuminnnn/origin_bento.git
+$ git clone git@github.com:takuminnnn/origin_bento.git
 ```
 
 ```bash
@@ -29,7 +29,7 @@ $ which git_pull
 
 # Usage
 
-`order.js`内のコードにメールアドレスを入れて、
+`order.js`にメールアドレスを追記して、
 
 
 ```bash
